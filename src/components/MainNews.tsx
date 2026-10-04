@@ -16,7 +16,7 @@ const MainNews = ({ news }: { news: News[] }) => {
   //   console.log(otherNews)
   return (
     <div className="flex gap-2">
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 w-96 shadow-sm ">
         <figure>
           <Image
             height={600}

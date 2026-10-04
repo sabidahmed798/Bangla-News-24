@@ -1,19 +1,28 @@
-const NewsCard = ({ news }) => {
-  console.log(news);
+import Image from "next/image";
+
+interface News {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  imageUrl: string;
+  imageAlt: string;
+}
+const NewsCard = ({ news }: { news: News }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="card bg-base-100  shadow-sm">
       <figure>
-        {/* <Image
+        <Image
           height={600}
           width={400}
-          src={firstNews.imageUrl}
-          alt={firstNews.imageUrl}
-        /> */}
+          src={news.imageUrl}
+          alt={news.imageUrl}
+        />
       </figure>
       <div className="card-body">
-        {/* <p className="text-red-600 font-semibold">{firstNews.category}</p>
-        <h2 className="card-title">{firstNews.title}</h2>
-        <p>{firstNews.description}</p> */}
+        <p className="text-red-600 font-semibold">{news.category}</p>
+        <h2 className="card-title">{news.title}</h2>
+        <p>{news.description}</p>
       </div>
     </div>
   );
