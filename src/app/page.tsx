@@ -1,7 +1,8 @@
 import MainNews from "@/components/MainNews";
-import Marquee from "@/components/Marquee";
-import MostRead from "@/components/MostRead";
+
+// import MostRead from "@/components/MostRead";
 import NewsCard from "@/components/NewsCard";
+import MostRead from "../../src/components/MostRead";
 
 interface IOtherSection {
   curationId: string;
@@ -29,7 +30,6 @@ export default async function Home() {
 
   return (
     <div>
-      <Marquee />
       <div className="grid grid-cols-3 container mx-auto mt-3">
         {/* news section */}
         <div className=" col-span-2 ">
@@ -50,8 +50,11 @@ export default async function Home() {
           </div>
         </div>
         {/* most read section */}
-        <div className="col-span-1 "></div>
-        <MostRead />
+        <div className="col-span-1 ">
+          <MostRead />
+        </div>
+
+        <h1>Hellow</h1>
       </div>
     </div>
   );
