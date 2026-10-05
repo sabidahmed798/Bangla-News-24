@@ -1,6 +1,15 @@
 import NewsCard from "@/components/NewsCard";
 
-const CategoryNews = async ({ params }) => {
+interface News {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  imageUrl: string;
+  imageAlt: string;
+}
+
+const CategoryNews = async ({ params }: { params: { categoryId: string } }) => {
   const { categoryId } = await params;
 
   const res = await fetch(
@@ -9,7 +18,7 @@ const CategoryNews = async ({ params }) => {
 
   const data = await res.json();
 
-  const categoryNews = data.data;
+  const categoryNews: News[] = data.data;
   console.log(categoryNews);
 
   return (
