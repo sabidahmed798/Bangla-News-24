@@ -1,6 +1,7 @@
 //
 import Image from "next/image";
 import NavLink from "./NavLink";
+import Userinfo from "./Userinfo";
 
 const Header = () => {
   const date = new Date().toLocaleDateString("bn-BD", {
@@ -24,11 +25,7 @@ const Header = () => {
         <div className="flex gap-5 justify-center "></div>
       </div>
 
-      <div className="flex gap-3">
-        <button className="btn btn-dash btn-success">সাইন ইন</button>
-
-        <button className="btn bg-red-700 hover:bg-red-950">সাইন আপ</button>
-      </div>
+      <Userinfo />
       <div></div>
       {/* <NavLink /> */}
     </header>

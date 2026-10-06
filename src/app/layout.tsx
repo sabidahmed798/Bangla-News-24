@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import NavLink from "@/components/NavLink";
 import Marquee from "@/components/Marquee";
+import { Toaster } from "react-hot-toast";
 
 const notoSerifBegali = Noto_Serif_Bengali({
   subsets: ["latin", "bengali"],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <NavLink />
         <Marquee />
         <main className="container mx-auto">{children}</main>
+        <Toaster />
       </body>
     </html>
   );
