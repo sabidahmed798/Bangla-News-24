@@ -1,6 +1,6 @@
 # 📰 Bangla News 24
 
-A modern and responsive Bangla news website built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **DaisyUI**.
+A modern and responsive Bangla news website built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **react**.
 
 Bangla News 24 provides users with the latest news across different categories including politics, world, economy, health, sports, technology, and more.
 
@@ -8,8 +8,9 @@ Bangla News 24 provides users with the latest news across different categories i
 
 ## 🌐 Live Website
 
-🔗 **Live Demo:** [Add your Vercel live link here]
+🔗 **Live Demo:**  https://y-sable-theta-57.vercel.app/
 
+    **github repo:**  https://github.com/sabidahmed798/Bangla-News-24
 ---
 
 
@@ -47,7 +48,7 @@ Bangla News 24 provides users with the latest news across different categories i
 - Tailwind CSS
 - DaisyUI
 - HTML5
-- CSS3
+- auth
 
 ### API & Data
 
@@ -125,23 +126,14 @@ Category	Route
 দেখুন	/video
 🔌 API
 
-This project uses a REST API to fetch news data.
 
-Base API
-https://news-api-v2.vercel.app
-Example Endpoints
-/api/news/sections
-/api/news/most-read
-/api/article/:newsId
-
-The API is used to load news sections, popular news, and individual news details.
 
 🚀 Getting Started
 
 Follow these steps to run the project locally.
 
 1. Clone the repository
-git clone https://github.com/your-username/bangla-news-24.git
+git clone https:https://github.com/sabidahmed798/Bangla-News-24.git
 2. Go to the project directory
 cd bangla-news-24
 3. Install dependencies
@@ -201,6 +193,7 @@ Implement dynamic routes
 Build responsive layouts
 Improve frontend development skills
 Practice real-world project structure
+
 👨‍💻 Developer
 Sabid Ahmed
 
@@ -217,6 +210,5 @@ MongoDB
 
 
 
-=====
 
-📰 A modern and responsive Bangla news platform featuring category-based news, popular news, dynamic news details and API integration. Built with Next.js, React, TypeScript, Tailwind CSS & DaisyUI. Live: YOUR_VERCEL_LINK
+
