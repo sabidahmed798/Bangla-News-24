@@ -1,36 +1,228 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 Bangla News 24
 
-## Getting Started
+A modern and responsive Bangla news website built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **DaisyUI**.
 
-First, run the development server:
+Bangla News 24 provides users with the latest news across different categories including politics, world, economy, health, sports, technology, and more.
 
-```bash
+---
+
+## 🌐 Live Website
+
+🔗 **Live Demo:** [Add your Vercel live link here]
+
+---
+
+## 📸 Project Screenshot
+
+> Add your project screenshot here.
+
+![Bangla News 24 Screenshot](./public/screenshot.png)
+
+---
+
+## ✨ Features
+
+- 🏠 Modern and responsive homepage
+- 📰 Latest Bangla news
+- 🏛️ Politics news
+- 🌎 World news
+- 💰 Economy news
+- 🏥 Health news
+- ⚽ Sports news
+- 💻 Technology news
+- 🔥 Most read/popular news
+- 🎥 Video news section
+- 📄 Dynamic news details page
+- 🔗 Category-based navigation
+- 📱 Fully responsive design
+- ⏳ Loading page
+- ❌ Custom 404 Not Found page
+- 🖼️ News images with Next.js Image
+- 🚀 Fast page loading with Next.js
+- 📡 News data fetched from REST API
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- HTML5
+- CSS3
+
+### API & Data
+
+- REST API
+- Fetch API
+- Dynamic API routes
+
+### Tools
+
+- Git
+- GitHub
+- Vercel
+- VS Code
+
+---
+
+## 📦 Main Dependencies
+
+```json
+{
+  "next": "Next.js",
+  "react": "React",
+  "react-dom": "React DOM",
+  "typescript": "TypeScript",
+  "tailwindcss": "Tailwind CSS",
+  "daisyui": "DaisyUI"
+}
+
+Dependency versions may vary depending on the project's package.json.
+
+📂 Project Structure
+bangla-news-24/
+│
+├── public/
+│   └── images/
+│
+├── src/
+│   └── app/
+│       ├── bengali/
+│       ├── politics/
+│       ├── world/
+│       ├── economy/
+│       ├── health/
+│       ├── sports/
+│       ├── technology/
+│       ├── video/
+│       ├── news/
+│       │   └── [newsId]/
+│       │       └── page.tsx
+│       │
+│       ├── components/
+│       ├── loading.tsx
+│       ├── not-found.tsx
+│       ├── layout.tsx
+│       └── page.tsx
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+└── README.md
+📰 News Categories
+
+The website includes the following major categories:
+
+Category	Route
+মূলপাতা	/bengali
+রাজনীতি	/politics
+বিশ্ব	/world
+অর্থনীতি	/economy
+স্বাস্থ্য	/health
+খেলা	/sports
+প্রযুক্তি	/technology
+সর্বাধিক পঠিত	/bengali/popular/read
+দেখুন	/video
+🔌 API
+
+This project uses a REST API to fetch news data.
+
+Base API
+https://news-api-v2.vercel.app
+Example Endpoints
+/api/news/sections
+/api/news/most-read
+/api/article/:newsId
+
+The API is used to load news sections, popular news, and individual news details.
+
+🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+1. Clone the repository
+git clone https://github.com/your-username/bangla-news-24.git
+2. Go to the project directory
+cd bangla-news-24
+3. Install dependencies
+
+Using npm:
+
+npm install
+
+Or using pnpm:
+
+pnpm install
+4. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will run at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+🏗️ Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm start
+☁️ Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is deployed using Vercel.
 
-## Deploy on Vercel
+Every new change can be deployed automatically through GitHub.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub
+   ↓
+git push
+   ↓
+Vercel
+   ↓
+Production Deployment 🚀
+📱 Responsive Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bangla News 24 is designed to work across different screen sizes:
+
+📱 Mobile
+📲 Tablet
+💻 Laptop
+🖥️ Desktop
+🎯 Project Goals
+
+The main goals of this project are:
+
+Build a modern Bangla news platform
+Practice Next.js App Router
+Practice API data fetching
+Create reusable React components
+Implement dynamic routes
+Build responsive layouts
+Improve frontend development skills
+Practice real-world project structure
+👨‍💻 Developer
+Sabid Ahmed
+
+Full Stack Web Developer | Next.js Learner
+
+I'm currently learning modern web development with:
+
+React.js
+Next.js
+TypeScript
+Tailwind CSS
+Node.js
+MongoDB
+
+
+
+=====
+
+📰 A modern and responsive Bangla news platform featuring category-based news, popular news, dynamic news details and API integration. Built with Next.js, React, TypeScript, Tailwind CSS & DaisyUI. Live: YOUR_VERCEL_LINK

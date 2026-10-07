@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="container mx-auto flex items-center ">
-      <div className="flex items-center gap-3 border border-r-amber-300 justify-between w-full">
+      <div className="flex items-center gap-3   justify-between w-full">
         <Image
           className="h-20 w-20"
           height={80}
