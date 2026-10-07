@@ -19,14 +19,18 @@ const Userinfo = () => {
     <div>
       {user ? (
         <div>
-          <div className="avatar mt-3">
-            <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
-              <image
-                alt="Tailwind-CSS-Avatar-component"
-                src={user?.image as string}
-              />
+          <Link href={"/profile"}>
+            <div className="avatar mt-3">
+              <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
+                <img
+                  alt="Tailwind-CSS-Avatar-component"
+                  // src={user?.image as string}
+                  src={user?.image || "/default-avatar.png"}
+                />
+              </div>
             </div>
-          </div>
+          </Link>
+
           <h2 className="mx- -3 mt-2">{user?.name}</h2>
           <button onClick={handleSignout} className="btn btn-error btn-xs  ">
             Singout
