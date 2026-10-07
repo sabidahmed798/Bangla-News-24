@@ -23,7 +23,7 @@ const SignInPage = () => {
       console.log(data);
     }
     if (error) {
-      toast.error(error.message);
+      toast.error(error?.message || "somthing rong");
       console.log(error);
     }
   };

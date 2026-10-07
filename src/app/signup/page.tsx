@@ -27,7 +27,7 @@ const SignUpPage = () => {
       redirect("/");
     }
     if (error) {
-      toast.error(error.message);
+      toast.error(error?.message || "somthing rong");
       console.log(error);
     }
   };
