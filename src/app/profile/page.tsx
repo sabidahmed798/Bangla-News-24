@@ -10,10 +10,6 @@ const ProfilePage = () => {
   const { data: section } = authClient.useSession();
   const user = section?.user;
 
-  if (!user) {
-    redirect("/signin");
-  }
-
   const [show, setShow] = useState(false);
 
   const handleUpdateProfile = async (e: React.SubmitEvent<HTMLElement>) => {

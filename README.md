@@ -12,13 +12,7 @@ Bangla News 24 provides users with the latest news across different categories i
 
 ---
 
-## 📸 Project Screenshot
 
-> Add your project screenshot here.
-
-![Bangla News 24 Screenshot](./public/screenshot.png)
-
----
 
 ## ✨ Features
 
